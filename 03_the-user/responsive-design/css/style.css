@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: red;
+  font-family: sans-serif;
+
+  border: 1px solid black;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* TEXT */
+h1 {
+  font-weight: normal;
+  font-size: var(--fontSizeHeading);
+  line-height: 1;
+  margin: 0;
+  transition: font-size 0.5s ease;
+}
+
+.text {
+  font-size: var(--fontSizeText);
+  transition: font-size 0.5s ease;
+}
+
+/* MAIN / POSITIONING */
+main {
+  /* background-color: blue; */
+  flex: 1 0 auto;
+  display: flex;
+  gap: var(--gapL);
+  padding: var(--gapS);
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  main {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+main .text {
+  /* border: 1px solid black; */
+  flex: 1 1 33%;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  main {
+    justify-content: space-between;
+  }
+  main .text {
+    flex: 0 0 auto;
+  }
+  main .text:nth-child(2) {
+    /* display: none; */
+    visibility: hidden;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  main {
+    align-items: center;
+    justify-content: center;
+  }
+  main .text {
+    flex: 0 0 auto;
+  }
+  /* main .text:first-of-type {
+    flex: 1 0 auto;
+  } */
+}
+
+/* FOOTER */
+small {
+  display: block;
+  padding: var(--gapS);
+  /* transform: translate(50%, 50%); */
+  /* transform: scale(50%); */
+  /* transform: rotate(12deg); */
+  transform: skew(20deg);
+  transition: transform 0.5s ease;
+}
+
+/* mobile + tablet */
+@media screen and (max-width: 900px) {
+  small {
+    transform: skew(-20deg);
+  }
+}
+
+small a {
+  color: inherit;
+}
+
+/* only apply on hover devices */
+@media (hover: hover) {
+  small a:hover {
+    color: white;
+  }
+}

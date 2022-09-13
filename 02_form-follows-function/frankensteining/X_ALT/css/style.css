@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background-color: blue;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+a {
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: rgb(255, 233, 35);
+}
+
+/* TITLE */
+h1 {
+  font-weight: normal;
+}
+
+#title-left {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-size: 10vw;
+}
+
+#title-right {
+  letter-spacing: 11px;
+}
+
+/* TEXTS */
+h1,
+p {
+  padding: 10px;
+  margin: 10px 10px 0 10px;
+}
+
+small {
+  padding: 5px 10px;
+  margin: 10px 10px 50px 10px;
+  display: inline-block;
+}
+
+/* DESIGN-SYSTEMS */
+.design-system_1 {
+  background-color: blue;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.design-system_2 {
+  background-color: rgb(255, 233, 35);
+  width: 200px;
+  height: 60px;
+  margin-bottom: 50px;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: serif;
+  text-align: justify;
+}
+
+.design-system_3 {
+  background: white;
+  color: rgb(255, 233, 35);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border: 3px solid black;
+  margin: 100px 25px;
+  font-size: 30px;
+  max-width: 800px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* DECORATIVE ELEMENTS */
+.decorative-element {
+  margin: 20px;
+  background-color: white;
+  mix-blend-mode: difference;
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  position: absolute;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.decorative-element:hover {
+  background-color: transparent;
+}
+
+.small {
+  width: 50px;
+  height: 50px;
+}
+
+#top-right {
+  top: 10px;
+  right: 50px;
+}
+
+#top-left {
+  top: 30%;
+  left: 10%;
+}
+
+#middle-left {
+  top: 50%;
+  left: 50px;
+}
+
+#middle-right {
+  top: 45%;
+  right: 2%;
+}
+
+#middle {
+  top: 50%;
+  left: 60%;
+}
+
+#bottom-right {
+  bottom: 10px;
+  right: 200px;
+}
+
+#bottom-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
