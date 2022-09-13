@@ -1,0 +1,154 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 50px;
+  padding: 0 20px;
+}
+
+* {
+  /* border: 1px solid black; */
+}
+
+p {
+  font-size: 30px;
+  padding: 5px 10px;
+}
+
+a {
+  color: inherit;
+}
+
+/* STYLES */
+.white {
+  font-family: monospace;
+  background-color: white;
+  color: black;
+  max-width: 500px;
+  margin: 10px;
+  border-radius: 30px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.black {
+  font-family: sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  text-align: justify;
+  background-color: black;
+  color: white;
+  width: 400px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
+
+.gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.75) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: -1px;
+  text-align: right;
+}
+
+/* REFERENCES */
+small {
+  position: fixed;
+  bottom: 20px;
+  padding: 10px;
+}
+
+small a:hover {
+  color: grey;
+}
+
+/* TOGGLE */
+#change-theme {
+  padding: 10px;
+  height: 50px;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+#change-theme:hover {
+  background-color: grey;
+}
+
+#change-theme a {
+  text-decoration: none;
+}
+
+#change-theme div {
+  display: inline-block;
+}
+
+#toggle,
+#toggle-switch {
+  border-radius: 50px;
+}
+
+#toggle {
+  width: 75px;
+  height: 40px;
+  background-color: white;
+  padding: 2px 5px;
+}
+
+#toggle-switch {
+  background-color: black;
+  width: calc(40px - 3px * 2);
+  height: calc(40px - 3px * 2);
+}
+
+/* DECO ELEMENTS */
+.deco-element {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  position: absolute;
+  transition: background-color 0.3s ease;
+  mix-blend-mode: difference;
+  background-color: white;
+  color: black;
+}
+
+.deco-element:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#deco-element-1 {
+  top: 50%;
+  left: 10%;
+}
+
+#deco-element-2 {
+  top: 20%;
+  right: 25%;
+}
+
+#deco-element-3 {
+  bottom: 20%;
+  left: 50%;
+}
+
+#deco-element-4 {
+  bottom: 25%;
+  left: 5%;
+}
+
+.big {
+  width: 200px;
+  height: 200px;
+}
