@@ -27,3 +27,8 @@ body,
     rgba(0, 0, 0, 0.5) 100%
   );
 }
+
+/* TOGGLE */
+#toggle-switch {
+  margin-left: 40px;
+}
