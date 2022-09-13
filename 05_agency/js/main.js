@@ -18,19 +18,11 @@
 const buttons = document.getElementsByTagName('button');
 const plusButton = buttons[0];
 const minusButton = buttons[1];
-const output = document.getElementById('satisfaction-output');
+const output = document.getElementById('agency-output');
 
-// define satisfaction scale as array
-const scale = [
-  'very dissatisfied',
-  'dissatisfied',
-  'somewhat dissatisfied',
-  'neutral',
-  'somewhat satisfied',
-  'satisfied',
-  'very satisfied',
-];
-// set satisfaction counter to neutral = scale[3]
+// define agency scale as array
+const scale = ['never', 'rarely', 'sometimes', 'often', 'always'];
+// set agency counter to neutral = scale[3]
 let counter = 3;
 
 // add event listener to buttons
@@ -39,10 +31,10 @@ for (let i = 0; i < buttons.length; i++) {
   const button = buttons[i];
 
   // on each click, update the satisfation counter
-  button.addEventListener('click', updateSatisfaction);
+  button.addEventListener('click', updateAgency);
 }
 
-function updateSatisfaction(e) {
+function updateAgency(e) {
   // get the value from the clicked button
   const buttonValue = e.target.value;
 

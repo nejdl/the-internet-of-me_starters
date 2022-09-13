@@ -1,11 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
 /* VOTING / OUTPUT */
-#satisfaction-voting {
+#agency-voting {
   display: flex;
 }
 
-#satisfaction-output {
+#agency-output {
   flex: 1 0 auto;
   text-align: center;
+}
+
+/* EDITABLE CONTENT */
+span {
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 /* FOOTNOTE */
@@ -17,5 +27,4 @@ small {
   bottom: 0;
   left: 0;
   padding: 10px;
-  text-align: center;
 }
