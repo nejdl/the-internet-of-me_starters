@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Personalization</title>
+    <meta name="description" content="Personalized Web Glossary – Personalization" />
+    <meta
+      name="keywords"
+      content="personalized, web, glossary, personalization, burg halle"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Personalization</h1>
+      <div id="data-container">
+        <div>
+          date
+          <div class="data-output" id="date">0000/00/00</div>
+        </div>
+        <div>
+          time
+          <div class="data-output" id="time">00:00:000</div>
+        </div>
+        <div>
+          time passed
+          <div class="data-output" id="time-passed">00:00:00</div>
+        </div>
+        <div>
+          clicks
+          <div class="data-output" id="clicks">0</div>
+        </div>
+        <div class="desktop-only">
+          mouse
+          <div class="data-output" id="mouse">X | Y</div>
+        </div>
+        <div class="mobile-only">
+          touch
+          <div class="data-output" id="touch">X | Y</div>
+        </div>
+        <div>
+          viewport
+          <div class="data-output" id="viewport">0 | 0</div>
+        </div>
+        <div class="desktop-only">
+          total scroll distance
+          <div class="data-output" id="scroll-distance">0</div>
+        </div>
+        <div>
+          ip address
+          <div class="data-output" id="ip-address">0.0.0.0</div>
+        </div>
+        <div>
+          internet provider
+          <div class="data-output" id="internet-provider">XXX</div>
+        </div>
+        <div class="wide desktop-only">
+          user-agent
+          <div class="data-output" id="user-agent">user-agent</div>
+        </div>
+        <div>
+          location 
+          <div>
+              <button id="getLocation">allow location</button>
+          </div>
+        </div>
+        <div>
+          country
+          <div class="data-output" id="country">XX</div>
+        </div>
+        <div>
+          city 
+          <div class="data-output" id="city">—</div>
+        </div>
+        <div>
+          weather 
+          <div class="data-output" id="weather">—</div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
