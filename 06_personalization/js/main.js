@@ -15,12 +15,10 @@ function updateOutput(type, dataFunction, rate) {
 // CALCULATE USER DATA
 // date
 const timeOfPageLoad = new Date();
-const date =
-  timeOfPageLoad.getFullYear() +
-  '/' +
-  (timeOfPageLoad.getMonth() + 1) +
-  '/' +
-  timeOfPageLoad.getDate();
+const year = timeOfPageLoad.getFullYear();
+const month = timeOfPageLoad.getMonth() + 1;
+const day = timeOfPageLoad.getDate();
+const date = year + '/' + month + '/' + day;
 displayOutput('date', date);
 
 // time
@@ -68,11 +66,11 @@ updateOutput('time-passed', getTimePassed, 1000);
 
 // clicks
 let clicks = 0;
-function getClicks() {
+function displayClicks() {
   clicks += 1;
   displayOutput('clicks', clicks);
 }
-document.addEventListener('click', getClicks);
+document.addEventListener('click', displayClicks);
 
 // mouse
 let mouseX = 0;
@@ -126,8 +124,8 @@ function displayScrollDistance(e) {
 }
 document.addEventListener('wheel', displayScrollDistance);
 
-// location information (ip / location / etc.)
-function fetchLocationInfo() {
+// ip information (ip / country / provider)
+function fetchIpInformation() {
   let apiKey = '37b0f7b36ff347928f4f36bcab20edbc';
   // Make the request
   fetch('https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey)
@@ -145,7 +143,7 @@ function fetchLocationInfo() {
     });
 }
 
-fetchLocationInfo();
+fetchIpInformation();
 
 // location / weather
 function getLocation() {
