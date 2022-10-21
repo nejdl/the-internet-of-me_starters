@@ -72,45 +72,6 @@ small a:hover {
   color: grey;
 }
 
-/* TOGGLE */
-#change-theme {
-  padding: 10px;
-  height: 50px;
-  font-size: 50px;
-  text-transform: uppercase;
-  line-height: 0.8;
-}
-
-#change-theme:hover {
-  background-color: grey;
-}
-
-#change-theme a {
-  text-decoration: none;
-}
-
-#change-theme div {
-  display: inline-block;
-}
-
-#toggle,
-#toggle-switch {
-  border-radius: 50px;
-}
-
-#toggle {
-  width: 75px;
-  height: 40px;
-  background-color: white;
-  padding: 2px 5px;
-}
-
-#toggle-switch {
-  background-color: black;
-  width: calc(40px - 3px * 2);
-  height: calc(40px - 3px * 2);
-}
-
 /* DECO ELEMENTS */
 .deco-element {
   height: 100px;
